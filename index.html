@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <title>Larissa</title>
+    <link href="css/style.css" rel="stylesheet" type="text/css">
+</head>
+<body>
+    <header class="topo container">
+            <span id="btn_menu" class="btn_menu"><img src="imagens/menu.jpg" alt=""></span>
+        <nav class="menu">
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#historia">História</a></li>
+                <li><a href="#especialidade">Especialidade</a></li>
+                <li><a href="#estudo">Estudo</a></li>
+                <li><a href="#especializando">Especializando</a></li>
+                <li><a href="#qualidades">Qualidades</a></li>
+            </ul>
+        </nav>
+       
+        <div class="cima">
+            <h1>Larissa de Morais</h1>
+            <div class="dados">
+                <p>Telefone: 0000-0000</p>
+                <p> <a href="https://www.facebook.com/larissa.demorais.77">Facebook: Larissa de Morais</a> </p>
+                <p>Email: larissademorais@gmail.com</p>
+            </div>
+            
+        </div>
+        <div class="baixo">
+            <section id=historia>
+                <h2>História sobre mim</h2>
+                <p>Como já observado no site, meu nome é Larissa de Morais, tenho 16 anos e estou cursando o 2º do Ensino Médio na Escola SESI Tatuapé. Também faço um curso de informática no SENAI de Santa Cecília, estou no primeiro módulo. Me envolvi com este curso porque é algo bem visto no mercado de trabalho e por me ajudar em diversas áreas. Pretendo fazer novos cursos, todos aqueles que possam me ajudar futuramente.</p>
+            </section>
+            <div>
+                <img src="imagens/WhatsApp Image 2019-02-27 at 16.54.19.jpeg" alt="Moça jovem, bonita de cabelos longos e encaracolados sentada, mostrando um belo sorriso.">
+            </div>
+        </div>
+    </header>
+    <section id=especialidade>
+        <h2>Especialidades</h2>
+        <section class="conteudo">
+            <div class="html">
+                <h3>HTML</h3>
+                <p>uma das linguagens utilizadas para desenvolver web sites.</p>
+            </div>
+            <div class="ingles">
+                <h3>Nível de Inglês</h3>
+                <p>Meu nível de inglês é básico, possuo apenas o que aprendo na escola, mas pretendo fazer curso para me profissionalizar.</p>
+            </div>
+            <div class="css">
+                <h3>CSS</h3>
+                <p>Cascading Style Sheets, significa folha de estilo em cascata, serve para a estilização dos elementos do site.</p>
+            </div>
+            <div class="java">
+                <h3>Javascript</h3>
+                <p>É uma linguagem de programação que permite você implementar ítens complementares em páginas web.</p>
+            </div>
+        </section>
+    </section>
+    <section id="estudo">
+        <h2>Onde estudei:</h2>
+        <div class="conteudo_estudo">
+            <img src="imagens/sesi.jpg" alt="Fachada do SESI Tatuapé com um homem calvo discursando em um microfone">
+            <img src="imagens/senai.jpg" alt="Fachada da Escola Senai de Santa Cecília, com o portão azul fechado.">
+        </div>
+    </section>
+    <section id=especializando>
+        <h2>No que estou me especializando</h2>
+        <section class="conteudo">
+            <div class="sql">
+                <h3>SQL</h3>
+                <p>Structured Query Language, linguagem de consulta estruturada, linguagem padrão de gerenciamento de dados que interagem com os principais bancos de dados baseadas no modelo relacional.</p>
+            </div>
+            <div class="ux">
+                <h3>UX</h3>
+                <p>É tudo que envolve o modo como qualquer usuário interage com o mundo ao seu redor. Trabalha com os sentimentos do cliente.</p>
+            </div>
+            <div class="react">
+                <h3>React</h3>
+                <p>Uma biblioteca Javascript declarativa, eficiente e flexível para a criação de interfaces com o usuário (UI)</p>
+            </div>
+            <div class="photoshop">
+                <h3>Photoshop</h3>
+                <p>Editor de Imagens</p>
+            </div>
+        </section>
+    </section>
+    <section id="qualidades">
+        <h2>Outras qualidades:</h2>
+        <section class="conteudo">
+            <div>
+                <h3>Porque me contratar:</h3>
+                <p>Sou dedicada e procuro sempre evoluir no que eu faço, aprender novas coisas sempre que possível, tenho compromisso no que faço e tenho muito a oferecer.</p>
+            </div>
+            <div>
+                <h3>Alguns Hobbies:</h3>
+                <p>Jogo basquete e gosto muito de desenhar</p>
+            </div>
+            <div>
+                <h3>Virtudes:</h3>
+                <p>Persistente, organizada, focada. Não gosto de fazer as coisas pela metade.</p>
+            </div>
+        </section>
+    </section>
+    <footer>
+        <p> Telefone: 0000-0000</p>     
+        <p> <a href="https://www.facebook.com/larissa.demorais.77">Facebook: Larissa de Morais</a> </p>
+        <p>Email:larissademorais@gmail.com</p>
+    </footer>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script>
+    $(function(){
+        var nav = $('.menu');
+        var botao = $('.btn_menu');
+        botao.on('click', function(){
+            nav.toggleClass("active");
+        });
+    });
+    </script>
+</body>
+</html>

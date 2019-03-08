@@ -1,0 +1,288 @@
+*{
+    margin: none;
+    padding: none;
+    box-sizing: border-box;
+}
+a{
+    text-decoration: none;
+}
+ul{
+    list-style-type: none;
+}
+.container{
+    width: 100%;
+}
+.content{
+    width: 90%;
+    margin: auto;
+}
+nav ul{
+    background-color: #6f417d;
+    color: #fbefff;
+    font-size: 20pt;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+nav ul a{
+    color: #fbefff;/*peso que tem cada um dos ítens.*/
+}
+nav a:hover{
+    font-weight: bolder;
+}
+#btn_menu{
+    display: none;
+}
+.cima{
+    background-color: #fbefff;
+    display: flex;
+    justify-content: space-between;
+}
+h1{
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-size: 72pt;
+    color: #060307;
+    font-weight: bolder;
+    padding: 0.3em 0 0 0;
+}
+.dados{
+    font-family: Arial, Helvetica, sans-serif;
+    color:#6f417d;
+    font-size: 20pt;
+}
+a{
+    text-decoration: none;
+}
+.baixo{
+    display: flex;
+    justify-content: space-around;
+}
+#historia{
+    background-color: #6f417d;
+    width: 60%;
+    margin: 40px 0 10px 100px;
+    color: #060307;
+    border-radius: 40px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 1.3em;
+}
+.baixo img {
+    width: 40%;
+    float: right;
+    box-shadow:   20px   20px #6f417d,
+                 -20px   20px #6f417d,
+                  20px  -20px #6f417d,
+                 -20px  -20px #6f417d;
+    border:  30px solid #fbefff;
+    border-radius: 15px;
+    margin: 40px 100px 10px 200px;
+}
+ h2{
+    text-align: center;
+    font-size: 48pt;
+    font-weight: bold;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+h3{
+    text-align: center;
+    font-weight: bold;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+}
+.baixo p{
+    text-align: left;
+    padding: 0 20pt;
+}
+.conteudo{ 
+    color: #060307;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 4em;
+    flex-wrap: wrap;
+}
+.conteudo div{
+    font-family: Arial, Helvetica, sans-serif;
+    float: left;
+    width: 23%;
+    background-color: #fbefff;
+    border:  15px solid #6f417d;
+    border-radius: 40px;
+    padding: 1em;   
+}
+.conteudo_estudo{
+    display: flex;
+    justify-content: space-around;
+}
+.conteudo_estudo img{
+    box-shadow:   20px   20px #6f417d,
+                 -20px   20px #6f417d,
+                  20px  -20px #6f417d,
+                 -20px  -20px #6f417d;
+    border-radius: 15px;
+}
+footer{
+    font-family: Arial, Helvetica, sans-serif;
+    color:#6f417d;
+    font-size: 20pt;
+    text-align: center;
+    display: flex;
+    justify-content: space-around;
+}
+
+@media(max-width: 1300px){
+    nav ul{
+        font-size: 16pt;
+    }
+    
+    .dados{
+        font-size: 15pt;
+    }
+    h1{
+        font-size: 50pt;
+        font-weight: bolder;
+        padding: 0.1em 0 0 0;
+    }
+    .baixo img {
+        width: 80%;
+        border-radius: 5px;
+        margin: 20px 20px 0px 0px;
+    }
+   
+
+@media(max-width: 960px){
+    nav ul{
+        background-color: #6f417d;
+        color: #fbefff;
+        font-size: 20pt;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        align-items: center;
+        font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    }
+    nav ul a{
+        color: #fbefff;/*peso que tem cada um dos ítens.*/
+    }
+    nav a:hover{
+        font-weight: bolder;
+    }
+    #btn_menu{
+        display: block;
+        /*padding: 0.8em;
+        margin-right: 1em;*/
+        background: #6f417d;
+    }
+    .menu{
+        display: none;
+    }
+    .active{
+        display: block;
+    }
+    #btn_menu > img{
+        width: 30px;
+        height: 32px;
+    }
+    #historia{
+        
+        width: 100%;
+        margin: 10px 0 10px 10px;
+        color: #060307;
+        border-radius: 20px;
+        font-size: 0.9em;
+    }
+    h2{
+        font-size: 35pt;
+    }
+    .conteudo div{
+        width: 45%;
+        padding: 1em;
+        margin-bottom: 1em;   
+    }
+    footer{
+        font-size: 10pt;
+    } 
+    .conteudo_estudo img{
+        width: 300px;
+        height: 400px;
+    }  
+}
+}
+
+@media(max-width: 500px){
+    nav ul{
+        background-color: #6f417d;
+        color: #fbefff;
+        font-size: 20pt;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        align-items: center;
+        font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    }
+    nav ul a{
+        color: #fbefff;/*peso que tem cada um dos ítens.*/
+    }
+    nav a:hover{
+        font-weight: bolder;
+    }
+    #btn_menu{
+        display: block;
+        /*padding: 0.8em;
+        margin-right: 1em;*/
+        background: #6f417d;
+    }
+    #btn_menu > img{
+        width: 30px;
+        height: 32/px;
+    }
+    .menu{
+        display: none;
+    }
+    .active{
+        display: block;
+    }
+    .dados{
+        font-size: 10pt;
+    }
+    h1{
+        font-size: 30pt;
+        font-weight: bolder;
+        padding: 0.1em 0 0 0;
+    }
+    .baixo{
+        flex-direction: column-reverse;
+        flex-wrap: wrap;
+    }
+    #historia{
+        width: 100%;
+        margin: 10px 0 10px 10px;
+        color: #060307;
+        border-radius: 10px;
+        font-size: 0.9em;
+    }
+    .baixo img {
+        width: 100%;
+        border-radius: 5px;
+        margin: 20px 20px 20px 0px;
+    }
+    h2{
+        font-size: 25pt;
+    }
+    .conteudo div{
+        width: 100%;
+        padding: 1em;
+        margin-bottom: 1em;   
+    }
+    footer{
+        font-size: 10pt;
+        flex-wrap: wrap;
+    } 
+    .conteudo_estudo img{
+        width: 150px;
+        height: 200px;
+    }
+     
+}
